@@ -1,0 +1,92 @@
+Step 1: Install MinGW
+
+1. Download MinGW:
+
+Visit the MinGW-w64 project and download the MinGW installer (like mingw-get-setup.exe).
+
+
+
+2. Run the Installer:
+
+Open the installer and select the installation options. Make sure to install the GCC compiler.
+
+
+
+3. Install to a Directory:
+
+Install it in a directory like C:\MinGW or C:\Program Files\mingw-w64.
+
+
+
+
+Step 2: Add MinGW to the System PATH
+
+1. Open Environment Variables:
+
+Right-click on "This PC" or "My Computer" and select "Properties".
+
+Click on "Advanced system settings".
+
+Click on the "Environment Variables" button.
+
+
+
+2. Edit the PATH Variable:
+
+In the "System variables" section, find the Path variable and select it.
+
+Click on "Edit".
+
+Click on "New" and add the path to your MinGW bin directory. For example:
+
+C:\MinGW\bin
+
+Click "OK" to close all dialogs.
+
+
+
+
+Step 3: Verify the Installation
+
+1. Open Command Prompt:
+
+Press Win + R, type cmd, and hit Enter.
+
+
+
+2. Check GCC Version:
+
+Type the following command and hit Enter:
+
+gcc --version
+
+If GCC is installed correctly, you should see the version information for GCC.
+
+
+
+
+Step 4: Compile Your C Program
+
+1. Navigate to Your Project Directory:
+
+Use the cd command to change the directory to where your C file is located. For example:
+
+cd C:\path\to\your\file
+
+
+
+2. Compile Your Program:
+
+Compile your C program with the following command:
+
+gcc your_program.c -o your_program.exe
+
+Replace your_program.c with the name of your C file.
+
+
+
+3. Run Your Program:
+
+To run your compiled program, type:
+
+your_program.exe
